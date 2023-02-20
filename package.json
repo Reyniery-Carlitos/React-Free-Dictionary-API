@@ -1,4 +1,5 @@
 {
+  "homepage": "https://reyniery-carlitos.github.io/React-Free-Dictionary-API/",
   "name": "dictionary-web-app",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "standard": "^17.0.0",
@@ -14,6 +17,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-react": "3.1.0",
+    "gh-pages": "^5.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
